@@ -1,0 +1,38 @@
+---
+title: "Lab 09 - More inference"
+subtitle: "Due: Thursday, Apr 16 at 11:59pm EST"
+author: "Lab Group - Member 1, Member 2, Member 3, Member 4"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA, 
+                      message = FALSE, warning = FALSE,
+                      fig.height=6, fig.width = 9, fig.align = "center")
+```
+
+# Packages
+
+```{r packages}
+library(tidyverse)
+library(infer)
+library(broom)
+```
+
+# Data
+
+```{r read_data}
+no <- read_delim(file = "http://lib.stat.cmu.edu/datasets/NO2.dat",
+                 delim = "\t", col_names = FALSE)
+```
+
+# Setting seed
+
+```{r}
+set.seed(8675309)
+```
+
+# Exercises
+
+## Exercise 1
+
